@@ -1,9 +1,16 @@
-*{
+* {
     box-sizing: border-box;
 }
-footer{
+
+:root {
+    --hightLightColor: rgb(36, 105, 255);
+    --borderFigureColor: rgb(196, 196, 196);
+    --avatarBorderColor: rgb(45, 255, 150);
+}
+
+footer {
     margin: 0;
-    background-color: rgb(255, 215, 215);
+
     height: 60vh;
     width: 100%;
     padding: 24px;
@@ -13,21 +20,193 @@ footer{
     flex-direction: column;
     gap: 24px;
 }
-.footerContainer1{
-    background-color: aliceblue;
+
+.footerContainer1 {
+
     margin: 0;
     display: flex;
     justify-content: space-between;
-    padding: 0% 10%;
+    padding: 0% 6%;
     width: 100%;
     height: 50%;
 }
-.footerContainer2{
+
+.footerContainer2 {
     height: 50%;
     width: 100%;
-    background-color: rgb(66, 211, 211);
+
     margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 3px solid var(--borderFigureColor);
+    border-radius: 20px;
+    flex-direction: row;
+
+}
+
+.footerContainer1 figure {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+}
+
+.footerContainer1 figure img {
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 24px rgba(0, 0, 0, 0.6));
+    transition: 0.3s ease;
+}
+.footerContainer1 figure img:hover{
+    transform: scale(1.2);
+}
+.footerContainer1 figure div {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-style: italic;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 10%;
+}
+
+.footerContainer1 figure p {
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 15px 0;
+    align-self: center;
+}
+
+.foot-secBox1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+
+    border-right: 3px solid var(--borderFigureColor);
+    height: 100%;
+    width: 15%;
+    padding: 15px 30px;
+    margin: 0;
+}
+
+.foot-secBox2 {
+    height: 100%;
+    border-right: 3px solid var(--borderFigureColor);
+    margin: 0;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    width: 60%;
+}
+
+.foot-secBox3 {
+    margin: 0;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
+    height: 100%;
+    margin-right: 0;
+    margin-left: auto;
+    gap: 30px;
+}
+
+.foot-secBox1 p {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.foot-secBox1 span {
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(105, 105, 105);
+}
+
+.foot-secBox2 p {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.foot-secBox2 span {
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(105, 105, 105);
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.foot-secBox3 p {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.contactEmail {
+    font-size: 3.6rem !important;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.contactEmail:hover{
+    color: var(--hightLightColor);
+}
+.foot-secBox3 div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+.foot-secBox3 div img {
+    border: 3px solid var(--hightLightColor);
+    border-radius: 50%;
+    transition: .6s ease;
+}
+
+.foot-secBox3 div img:hover {
+    transform: scale(1.2);
+
+    border: 6px solid rgb(27, 255, 236);
+
+}
+
+.footerContain3 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    align-self: flex-start;
+    margin-left: 180px;
+}
+
+.footerContain3 p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footerContain3 span {
+    font-size: 1.5rem;
+    color: rgb(82, 82, 82);
+    font-weight: 500;
+}
+.foot-secBox1 a{
+    text-decoration: none;
+    transition: .3s ease;
+}
+.foot-secBox1 a:hover{
+    transform: scale(1.2);
 }

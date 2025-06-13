@@ -33,12 +33,14 @@ body {
 
 .navbar img {
     display: inline-block;
-    height: 66px;
+    height: 100px;
     width: auto;
     border: 6px solid rgb(27, 27, 255);
     border-radius: 30%;
     object-fit: contain;
     margin: 0;
+    margin-top: 45px;
+    filter: drop-shadow(0 0 30px rgb(0, 0, 0, 1)) drop-shadow(0 0 9px rgb(0, 0, 0, .3));
 }
 
 .navbar nav {

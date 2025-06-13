@@ -133,6 +133,7 @@ main section figure button:hover {
     background: var(--hightLightColor);
     border-color: black;
     color: white;
+    transform: scale(1.2);
 }
 .ownerInfo{
     margin-top: 6px;
