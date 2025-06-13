@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+footer{
+    margin: 0;
+    background-color: rgb(255, 215, 215);
+    height: 60vh;
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+.footerContainer1{
+    background-color: aliceblue;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 10%;
+    width: 100%;
+    height: 50%;
+}
+.footerContainer2{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(66, 211, 211);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

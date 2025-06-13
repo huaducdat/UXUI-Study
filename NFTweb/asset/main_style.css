@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+.Section1{
+    margin-bottom: 30px;
+}
+:root {
+    --hightLightColor: rgb(36, 105, 255);
+    --borderFigureColor: rgb(196, 196, 196);
+    --avatarBorderColor:  rgb(45, 255, 150);
+}
+
+main header {
+    position: static;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(182, 182, 182);
+    padding: 9px 21px;
+    box-shadow: 0 6px 18px black;
+    margin: 0;
+}
+
+
+main header button {
+    background-color: rgb(255, 255, 255);
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 15px;
+    width: 120px;
+    padding: 15px 9px;
+    border: 3px solid rgb(36, 105, 255);
+    transition: .9s ease;
+}
+
+main header button:hover {
+    color: white;
+    background: black;
+    border-color: white;
+}
+
+main header div {
+    margin-top: -30px;
+    margin-bottom: 12px;
+}
+
+main header div h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+main header div span {
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+main section {
+    background-color: rgb(255, 255, 255);
+    margin-top: 0;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 20px 20px;
+   
+    flex-wrap: wrap;
+    gap: 9px 9px;
+    object-fit: contain;
+}
+
+main section figure {
+    
+    margin: 0;
+    display: flex;
+    height: 49%;
+    object-fit: contain;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 24%;
+    border: 3px solid rgb(196, 196, 196);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px;
+    
+}
+
+.figImaBox {
+    display: flex;
+    justify-content: center;
+
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+    align-self: center;
+    background-color: black;
+}
+
+.figImaBox img {
+    height: 100%;
+    width: auto;
+    align-self: center;
+}
+
+main section figure button {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 21px;
+    width: 36%;
+    align-self: center;
+    height: 6%;
+    font-weight: bold;
+    transition: .9S ease;
+    font-size: large;
+    font-weight: bold;
+}
+
+main section figure button:hover {
+    background: var(--hightLightColor);
+    border-color: black;
+    color: white;
+}
+.ownerInfo{
+    margin-top: 6px;
+    margin-bottom: 15px;
+    background-color: rgb(233, 233, 233);
+    padding: 5px;
+}
+.ownerInfo div {
+    margin-top: 12px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+    height: 45px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.ownerInfo div img {
+    object-fit: cover;
+    height: 138%;
+}
+
+.ownerInfo div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    width: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    align-self: center;
+    background-color: black;
+    border: 3px solid rgb(45, 255, 150);
+}
+.ownerInfo h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.ownerInfo div h1{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.ownerInfo p{
+    font-style: italic;
+}
