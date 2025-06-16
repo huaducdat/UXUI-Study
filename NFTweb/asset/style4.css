@@ -41,8 +41,11 @@ body {
     margin: 0;
     margin-top: 45px;
     filter: drop-shadow(0 0 30px rgb(0, 0, 0, 1)) drop-shadow(0 0 9px rgb(0, 0, 0, .3));
+    transition: .6s ease;
 }
-
+.navbar img:hover{
+    border-color: rgb(255, 62, 14);
+}
 .navbar nav {
     display: flex;
     gap: 27px;

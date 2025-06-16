@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+:root{
+    --greenColor:  rgb(40, 151, 83);
+}
+
+
+.showRoom {
+    
+    
+    width: 100%;
+    height: 69vh;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 300px;
+}
+.showRoom div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    white-space: wrap;
+    flex-wrap: wrap;
+}
+.showRoom img{
+    height: 60%;
+    width: auto;
+    align-self: center;
+    filter: drop-shadow(9px 15px 15px rgba(0, 0, 0, 0.6));
+}
+.showRoom div h1{
+    color: rgb(40, 151, 83);
+    font-size: 4.9rem;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.showRoom div h2{
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.showRoom button{
+    background-color: var(--greenColor);
+    border: none;
+    padding: 18px 15px;
+    border-radius: 18px;
+    font-size: xx-large;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
