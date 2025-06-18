@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     padding: 0;
-    gap: 300px;
+    gap: 150px;
 }
 .showRoom div{
     display: flex;
@@ -53,4 +53,19 @@
     color: white;
     font-weight: bold;
     margin: 0;
+    transition: .9s ease;
+    
+}
+.showRoom button:hover{
+    background: white;
+    border: 6px solid var(--greenColor);
+    color: var(--greenColor);
+    width: 100%;
+    
+}
+.functionBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
 }
