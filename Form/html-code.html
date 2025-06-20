@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>From</title>
+    <meta name="name" content="Form Sheet">
+    <meta name="width" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../Form/asset/style.css">
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="imgBox">
+        <img src="../Form/asset/resource/img/Image.png" alt="Image">
+    </section>
+    <main>
+        <div class="formBox">
+            <h2>Let’s level up your brand, together</h2>
+            <p>You can reach us anytime via <a href="#">hi@untitledui.com</a></p>
+            <form class="myForm" action="">
+                <label for="inpName">Name</label>
+                <input id="inpName" type="text" id="inpName" name="inpName" placeholder="You name" required>
+                <label for="inpEmail">Email</label>
+                <input id="inpEmail" type="email" name="inpEmail" id="inpEmail" placeholder="your-email@company.com"
+                    required>
+                <label for="inputPhoneNumber">Phone number</label>
+                <div class="phoneGroup">
+                    <select name="country_id" id="country_id">
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="japan">JP</option>
+                        <option value="vietname">VN</option>
+                        <input type="tel" placeholder="+1 (555) 000-0000" required id="inputPhoneNumber">
+                    </select>
+                </div>
+                <label for="helpMess">How can we help?</label>
+                <textarea name="helpMess" id="helpMess" rows="4"
+                    placeholder="Tell us a little about the project..."></textarea>
+                <label>Service</label>
+                <div class="checkGroup" style="margin: 0;">
+                    <label for="check1"><input type="checkbox" name="check1" id="check1">Website design</label>
+                    <label for="check2"><input type="checkbox" name="check2" id="check2">UX design</label>
+                    <label for="check3"><input type="checkbox" name="check3" id="check3">User research</label>
+                    <label for="check4"><input type="checkbox" name="check4" id="check4">Content creation</label>
+                    <label for="check5"><input type="checkbox" name="check5" id="check5">Strategy & consulting</label>
+                    <label for="check6"><input type="checkbox" name="check6" id="check6">Other</label>
+                </div>
+                <button type="submit">Get started</button>
+            </form>
+        </div>
+
+    </main>
+</body>
+
+</html>

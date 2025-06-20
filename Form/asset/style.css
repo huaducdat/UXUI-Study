@@ -1,0 +1,222 @@
+html {
+    width: 1fr;
+    height: 1fr;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(211, 211, 211);
+}
+
+body {
+    aspect-ratio: 16/10;
+    
+    position: static;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 255, 255); 
+    align-self: center;
+}
+
+.imgBox {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, black 60%, transparent 100%);
+    mask-image: linear-gradient(to right, black 60%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+main {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.imgBox img {
+    position: static;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: auto;
+    position: static;
+    top: 0;
+    left: 0;
+    
+}
+
+.formBox form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 9px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.checkGroup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px 18px;
+    width: 100%;
+
+    justify-content: center;
+    padding: 9px 12px;
+    margin: 0;
+    margin-top: 12px;
+    border-style: solid;
+    border-radius: 12px;
+    border-width: thin;
+    object-fit: cover;
+}
+
+.checkGroup label {
+    margin: 6px 0px;
+    font-weight: lighter;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.formBox button {
+    align-self: center;
+    margin: 36px;
+    width: 51%;
+    height: 51px;
+    border-radius: 15px;
+    background-color: blueviolet;
+    border: 3px solid rgb(61, 129, 255, 0);
+    transition: .3s ease;
+    font: bold;
+    color: white;
+    font-size: 1.2rem;
+    object-fit: cover;
+}
+
+.formBox button:hover {
+    border-color: rgb(61, 129, 255);
+    background: white;
+    color: black;
+}
+
+input,
+select,
+textarea {
+    padding: 9px 12px;
+    font-size: .9rem;
+    outline: none;
+    border: 2px solid var(--highlightColor);
+    border-radius: 9px;
+    text-overflow: clip;
+    text-align: start;
+    line-height: 1.8;
+    object-fit: cover;
+}
+
+textarea {
+    border: 2px solid var(--highlightColor);
+    border-radius: 9px;
+    resize: none;
+    width: 100%;
+}
+
+:root {
+    --highlightColor: rgb(61, 129, 255);
+    ;
+}
+
+#inpName {
+    width: 100%;
+}
+
+#inpEmail {
+    width: 100%;
+}
+
+.phoneGroup {
+    padding: 0;
+    width: 100%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--highlightColor);
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.phoneGroup select {
+    border: none;
+    width: 18%;
+    border-right: 2px solid rgb(221, 221, 221);
+    border-radius: 0;
+    height: 100%;
+}
+
+.phoneGroup input {
+    border: none;
+    height: 100%;
+    width: 70%;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.formBox {
+    margin: 0;
+    padding: 6% 12%;
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    
+}
+
+.myForm {
+    justify-content: center;
+    display: flex;
+    align-items: start;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#inpName:hover,
+#inpEmail:hover,
+textarea:hover,
+.phoneGroup:hover,
+.checkGroup:hover,
+button:hover {
+    border-color: rgb(255, 91, 192) !important;
+}
+
+:root {
+    --hoverColor: rgb(255, 91, 192);
+}
