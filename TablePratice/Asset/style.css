@@ -1,0 +1,47 @@
+html{
+    width: 1fr;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+table{
+    width: 50%;
+    margin: 0;
+    border-collapse: separate; 
+    border-spacing: 6px;
+}
+caption{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    
+}
+th, td{
+    padding: 8px 12px;
+    text-align: left;
+    border: 1px solid black;  
+    border-radius: 10px;
+}
+th:hover, td:hover{
+    background-color: rgb(167, 202, 255);
+    cursor: pointer;
+}
+th{
+    background: grey;
+    color: white;
+}
+td{
+    background-color: white;
+}
+tfoot td{
+    text-align: center;
+    font-weight: bold;
+    background: rgb(216, 216, 216);
+}

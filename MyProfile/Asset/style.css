@@ -1,0 +1,23 @@
+html{
+    width: 1fr;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    
+}
+#mainHeader{
+    height: 9vh;
+    width: 100%;
+    background-color: aquamarine;
+}

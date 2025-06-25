@@ -1,0 +1,210 @@
+@media screen and (max-width: 1000px) {
+    .Section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start !important;
+        align-items: center;
+        height: fit-content;
+        padding: 3% 1% !important;
+        gap: 0 !important;
+        margin-top: 6% !important;
+        overflow: hidden;
+        gap: 15px !important;
+    }
+
+    .Section1 div {
+        object-fit: contain;
+    }
+
+    .sec1_description {
+
+        align-items: center;
+        margin: 0 !important;
+        margin-top: 0;
+        width: 100%;
+        height: auto !important;
+    }
+
+    .sec1_description div {
+        flex-direction: column !important;
+    }
+
+    .sec1_description div button {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ImagesBox {
+        margin: 0 !important;
+
+        overflow: hidden;
+        height: 50% !important;
+        width: 100%;
+
+    }
+
+    .ImagesBox img {
+        height: 100%;
+        width: auto;
+
+    }
+
+    .ImagesBox div {
+        display: none;
+    }
+
+    .navLink {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transform: translateX(-10%);
+        background: rgb(255, 255, 255);
+        margin: 0;
+        display: none !important;
+        padding: 18px 18px;
+
+        z-index: 10;
+        border-radius: 9px;
+        border-width: medium;
+        border-style: outset;
+        border-color: rgb(88, 88, 88);
+        box-shadow: 0 3px 15px 0px rgba(0, 0, 0, 0.6);
+        justify-content: center !important;
+        align-items: start;
+
+        height: 240px;
+        width: 200px;
+    }
+
+
+
+
+
+    .iconWrapper {
+        top: 0;
+
+        display: flex;
+        height: 60px;
+        margin: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+
+    }
+
+    .iconWrapper img {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        border: none;
+    }
+
+    .navBox:hover .navLink {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .navbar img {
+        height: 75px;
+        margin: 0;
+        margin-left: 9px;
+        filter: none;
+    }
+
+    .SearchBox {
+        margin-left: 3px !important;
+        margin-right: 3px;
+    }
+
+    .AccountBox {
+
+        display: none !important;
+        position: absolute;
+
+    }
+
+    .accountWrapper {
+        position: relative;
+    }
+
+    .accountWrapper img {
+        display: flex;
+        border: none;
+        height: 60px;
+        margin-right: 9px;
+    }
+
+    .accountWrapper:hover .AccountBox {
+        display: flex !important;
+        top: 100%;
+        left: -100%;
+
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        background: white;
+        height: 180px;
+        width: 150px;
+        margin: 0 !important;
+        padding: 18px 9px !important;
+        border-style: outset;
+        border-width: medium;
+        border-color: rgb(88, 88, 88);
+        border-radius: 15px;
+        box-shadow: 0 3px 15px 0 rgb(0, 0, 0, .6);
+
+    }
+
+    .ownerInfo div h1 {
+        font-size: 1.2rem;
+    }
+
+    .ownerInfo h2 {
+        font-size: 1rem;
+    }
+
+    .ownerInfo p {
+        font-size: .8rem;
+    }
+    main section figure{
+        height: 30%;
+    }
+    figure button {
+        font-size: .6rem !important;
+        overflow: hidden;
+    }
+
+    .footerContainer1 {
+        object-fit: contain;
+        overflow: hidden;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footerContainer1 figure {
+        height: 100%;
+        top: 100%;
+
+    }
+
+    .footerContainer1 figure img {
+        height: 18%;
+    }
+    .footerContainer1 figure p{
+        font-size: 1rem;
+    }
+    .footerContainer1 figure span{
+        font-size: .6rem;
+    }
+    footer{
+        height: 100vh;
+    }
+}
+:root {
+    --boderColorFQueries: rgb(88, 88, 88);
+    
+}

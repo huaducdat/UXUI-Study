@@ -1,7 +1,9 @@
 * {
     box-sizing: border-box;
 }
-
+html{
+    width: 100vw;
+}
 body {
     background-color: rgb(226, 226, 226);
     margin: 0;
@@ -42,6 +44,7 @@ body {
     margin-top: 45px;
     filter: drop-shadow(0 0 30px rgb(0, 0, 0, 1)) drop-shadow(0 0 9px rgb(0, 0, 0, .3));
     transition: .6s ease;
+    
 }
 .navbar img:hover{
     border-color: rgb(255, 62, 14);
@@ -73,7 +76,8 @@ body {
     padding: 0;
     width: 100%;
     max-width: 700px;
-    margin-right: 21px;
+    margin-right: 21px !important;
+    
 }
 
 .SearchBox input {
@@ -350,4 +354,23 @@ main {
     align-items: center;
     flex-direction: column;
     margin: 0;
+}
+.iconWrapper{
+    display: none;
+}
+.navBox{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+.accountWrapper img{
+    display: none;
+}
+.accountWrapper{
+    margin-left: auto;
+    margin-right: 0px;
+
 }
