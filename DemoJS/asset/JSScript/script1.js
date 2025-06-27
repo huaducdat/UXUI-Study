@@ -1,0 +1,18 @@
+function showMessEx() {
+    alert("I am from external!");
+}
+let a = 10;
+let b = 3;
+console.log(" a + b = ", a + b);
+console.log("a - b = ", a - b);
+console.log("a * b = ", a * b);
+console.log("a / b = ", a / b);
+console.log("a % b = ", a % b);
+console.log("a == b", a == b);
+console.log("a === b", a === b);
+console.log("a != b", a != b);
+console.log("a !== b", a !== b);
+console.log("a < b", a < b);
+console.log("a > b", a > b);
+console.log("a >= b", a >= b);
+console.log("a <= b", a <= b);

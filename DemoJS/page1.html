@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>Test JS</title>
+    <meta name="width" content="width=device-width, initial-scale=1.0">
+    <style>
+        html{
+            width: 1fr;
+        }
+        body{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            width: 90px;
+            padding: 3px 9px;
+            
+        }
+    </style>
+    <script src="../DemoJS/asset/JSScript/script1.js" defer></script>
+    <body>
+        <button onclick="alert('Xin chao, toi la inline')">Click me</button>
+        <button onclick="showMess()"> Click me</button>
+         <button onclick="showMessEx()">Click me</button>
+         <script>
+            function showMess()
+            {
+                alert("Wellcome to internal JS!");
+            }
+         </script>
+    </body>
+</html>
