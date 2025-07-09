@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>StudyJS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            display: flex;
+            width: 1fr;
+            padding-left: 30px;
+            padding-right: 30px;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        body {
+            margin-top: 15px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+
+            padding: 30px 9px;
+            border-radius: 30px;
+            box-shadow: 0 6px 9px 3px rgb(0, 0, 0, .3);
+        }
+
+        input {
+            width: 72%;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: none;
+            border-color: blue;
+            border-width: 2px;
+            border-style: hidden;
+            padding-left: 6px;
+            height: 24px;
+            background-color: rgb(230, 230, 230);
+
+        }
+
+        input:hover {
+            border-style: double;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+            margin-top: 18px;
+        }
+
+        form {
+            min-width: 30%;
+            max-width: 42%;
+            display: flex;
+            white-space: nowrap;
+            gap: 9px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        label {
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 9px 18px;
+            ;
+            font-weight: bold;
+            font-size: 1rem;
+            outline: none;
+            border: 3px solid rgba(0, 0, 255, 0);
+            border-radius: 9px;
+            background-color: black;
+            color: white;
+            object-fit: contain;
+            position: relative;
+            transition: .6s;
+        }
+
+        button:hover {
+            color: black;
+            background: white;
+            border: 3px solid blue;
+            transform: translateY(-3px);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Title</h1>
+    <span class="description">Say something!</span>
+
+    <form action="#">
+        <label for="nameStu">Your name: </label>
+        <input type="text" name="studenName" id="nameStu" placeholder="Input Your name here...">
+    </form>
+    <p id="helloUser" style="font-style: italic;"></p>
+    <button id="myButt" onclick="setNotice()">Enter</button>
+
+
+    <script src="../DOMStudy/asset/js/index2js.js"></script>
+</body>
+
+</html>
