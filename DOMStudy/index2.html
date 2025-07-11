@@ -93,19 +93,33 @@
 
         }
     </style>
+    <link rel="stylesheet" href="../DOMStudy/asset/css/style.css">
 </head>
 
 <body>
     <h1>Title</h1>
     <span class="description">Say something!</span>
 
-    <form action="#">
+    <form>
         <label for="nameStu">Your name: </label>
         <input type="text" name="studenName" id="nameStu" placeholder="Input Your name here...">
     </form>
     <p id="helloUser" style="font-style: italic;"></p>
     <button id="myButt" onclick="setNotice()">Enter</button>
-
+    <button id="newButt">Click and count</button>
+    <button id="saveUserInfo">Save User Info</button>
+    <button id="clearData">Clear Data</button>
+    <form
+        style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; justify-content: center; align-items: start; padding: 0; margin: 0; gap: 3px;">
+        <label style="margin: 0; grid-column: 1; grid-row: 1;">Passenger:</label>
+        <ul style="list-style-type: none; display: flex; gap: 9px; flex-direction: column; margin: 0; padding: 0; grid-column: 2; grid-row: 1;"
+            id="passengerLst">
+            <li>oke</li>
+        </ul>
+        <button id="addButt"
+            style="grid-column: 1 / span 2; grid-row: 2; width: 50%; height: 40px; justify-self: end; align-items: center; display: flex; justify-content: center; padding: 0; margin-top: 9px;">➕</button>
+    </form>
+    <button name="toggleButt">Toggle</button>
 
     <script src="../DOMStudy/asset/js/index2js.js"></script>
 </body>
