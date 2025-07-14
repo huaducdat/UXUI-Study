@@ -29,15 +29,29 @@
 
 }
 
+:root {
+    --high-light-color: rgb(255, 0, 179);
+    --grayTxt-color: #848484;
+    --out-grow-color-1: rgb(232, 255, 237);
+    --out-grow: rgba(255, 0, 179, 0.6);
+    --higher-light-color: rgb(255, 61, 197);
+}
+
 #avatar-box:hover {
-    border-color: var(--high-light-color);
-    box-shadow: 0 0 15px 1px var(--high-light-color);
+    border-color: var(--higher-light-color);
+    box-shadow: 0 0 15px var(--high-light-color), 0 0 30px var(--out-grow);
 }
 
 #avatar-box img {
     object-fit: contain;
     height: 100%;
     aspect-ratio: 1/1;
+    transition: .3s;
+}
+
+#avatar-box:hover img {
+    filter: brightness(1.2) saturate(.9);
+
 }
 
 #sign-block-box {
@@ -53,7 +67,7 @@
 
 #sign-block-box a:hover {
     color: var(--high-light-color);
-    filter: drop-shadow(0 0 3px var(--high-light-color));
+    filter: drop-shadow(0 0 3px var(--out-grow));
 }
 
 #page-name {
@@ -66,7 +80,7 @@
 
 #page-name:hover {
     color: var(--high-light-color);
-    filter: drop-shadow(0 0 3px var(--high-light-color));
+    filter: drop-shadow(0 0 3px var(--out-grow));
 }
 
 #user-info-box {

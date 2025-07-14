@@ -1,6 +1,6 @@
 :root {
-    --high-light-color: rgb(255, 35, 189);
+    --high-light-color: rgb(255, 0, 179);
     --grayTxt-color: #848484;
     --out-grow-color-1: rgb(232, 255, 237);
-   
+    --out-grow: rgba(255, 0, 179, 0.6);
 }

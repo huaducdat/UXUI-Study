@@ -211,7 +211,7 @@ input[type="radio"]:checked~.timeline-label {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    border-radius: 18px;
     display: block;
     width: 120%;
     height: 180%;
@@ -221,7 +221,7 @@ input[type="radio"]:checked~.timeline-label {
 }
 
 #folow-box span {
-    color: rgb(82, 177, 221);
+    color: rgb(19, 140, 196);
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 30px;

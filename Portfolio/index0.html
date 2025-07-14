@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="../Portfolio/resource/img/appleFav-icon.svg">
     <meta name="description" content="This website is your portfolio online">
     <meta name="keywords" content="portfolio, profile, showcase">
     <meta name="author" content="Duc Dat Hua">
@@ -22,6 +23,7 @@
     <link rel="stylesheet" href="../Portfolio/css/index0/main.css">
     <link rel="stylesheet" href="../Portfolio/css/index0/show-case-1.css">
     <link rel="stylesheet" href="../Portfolio/css/index0/root.css">
+    <link rel="stylesheet" href="../Portfolio/css/index0/row-Slide-box.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -66,35 +68,35 @@
                 </div>
                 <div id="folow-box">
                     <strong>My career path</strong>
-                    <span>2013</span>
+                    <span id="year-show">2013</span>
                     <div id="follow-path">
                         <div class="step">
-                            <input type="radio" id="step1" name="step" checked>
+                            <input type="radio" id="step1" name="step" checked value="0">
                             <label for="step1" class="circle"></label>
                             <div class="timeline-label">Architecture Study</div>
                         </div>
                         <div class="step">
-                            <input type="radio" id="step2" name="step">
+                            <input type="radio" id="step2" name="step" value="1">
                             <label for="step2" class="circle"></label>
                             <div class="timeline-label">Game concept and illustration</div>
                         </div>
                         <div class="step">
-                            <input type="radio" id="step3" name="step">
+                            <input type="radio" id="step3" name="step" value="2">
                             <label for="step3" class="circle"></label>
                             <div class="timeline-label">Unity game dev</div>
                         </div>
                         <div class="step">
-                            <input type="radio" id="step4" name="step">
+                            <input type="radio" id="step4" name="step" value="3">
                             <label for="step4" class="circle"></label>
                             <div class="timeline-label">Architect</div>
                         </div>
                         <div class="step">
-                            <input type="radio" id="step5" name="step">
+                            <input type="radio" id="step5" name="step" value="4">
                             <label for="step5" class="circle"></label>
                             <div class="timeline-label">Website create</div>
                         </div>
                         <div class="step">
-                            <input type="radio" id="step6" name="step">
+                            <input type="radio" id="step6" name="step" value="5">
                             <label for="step6" class="circle"></label>
                             <div class="timeline-label">Software engineer</div>
                         </div>
@@ -105,7 +107,26 @@
             </div>
             <div class="img-holder"><img src="../Portfolio/resource/img/showcase-1img.png" alt=""></div>
         </div>
+        <div id="row-Slide-box">
+            <input type="range" id="scrollSlider" min="0" max="100" value="0">
+            <div id="slider-catalog">
+                <div class="slide-img-box"><img src="../Portfolio/resource/img/SlideImg1.png" alt="image"></div>
+                <div class="slide-img-box"><img src="../Portfolio/resource/img/SlideImg2.png" alt="image"></div>
+                <div class="slide-img-box"><img src="../Portfolio/resource/img/SliderImg4.png" alt="img" style=""></div>
+                <div class="slide-img-box"><img src="../Portfolio/resource/img/SlideImg3.png" alt="img"></div>
+                <div class="slide-img-box"><img src="../Portfolio/resource/img/SliderImg5.png" alt="img"></div>
+                <div class="slide-img-box"><img src="../Portfolio/resource/img/SliderImg6.png" alt="img"></div>
+            </div>
+        </div>
+        <div id="skill-space">
+
+        </div>
     </main>
+
+
+
+
+    <script src="../Portfolio/js/part1.js"></script>
 </body>
 
 </html>
