@@ -1,0 +1,230 @@
+#show-case-1 {
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    padding-bottom: 60px;
+    background: linear-gradient(white 0%, #57C3C7 180%);
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+    gap: 60px;
+}
+
+
+
+.colum-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.colum-div strong {
+    font-size: 2.7rem;
+}
+
+.colum-div p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #848484;
+    width: 70%;
+}
+
+.img-holder {
+    min-width: 42%;
+    display: flex;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.img-holder img {
+    width: 100%;
+}
+
+#send-box {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 12px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.row-div {
+    width: 100%;
+    display: flex;
+    gap: 9px;
+    align-items: center;
+
+
+}
+
+.row-div input {
+    width: 100%;
+    height: 36px;
+    outline: none;
+    border: 2px solid rgb(122, 122, 122);
+    border-radius: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.row-div button {
+    height: 36px;
+    width: 120px;
+    border-radius: 3px;
+    border: none;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.row-div button:hover {
+    background-color: white;
+    color: black;
+}
+
+#follow-path {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* margin-top: 45%; */
+    padding: 0;
+
+    /* gap: 6px; */
+    width: 100%;
+    position: relative;
+    /* margin-right: 0; */
+}
+
+#follow-path::before {
+    content: "";
+    position: absolute;
+    top: 10.5px;
+    /* transform: translateY(-50%); */
+    left: 50%;
+    /* right: 0; */
+    transform: translateX(-50%);
+
+    /* transform: translateX(-50%); */
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 84%;
+    /* width: calc(100%-16px); */
+    height: 6px;
+    background-color: #2196f3;
+    z-index: 0;
+}
+
+#follow-path input[type="radio"] {
+    display: none;
+}
+
+.circle {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    border: 6px solid #2196f3;
+    border-radius: 50%;
+    background-color: white;
+    /* box-shadow: inset 0 0 3px #2196f3;  */
+    transition: all 0.3s ease;
+}
+
+input[type="radio"]:checked+.circle::before {
+    background-color: #2196f3;
+    border-color: #0d47a1;
+    /* box-shadow: 0 0 4px #0d47a1; */
+}
+
+input[type="radio"]:checked~.timeline-label {
+    opacity: 1;
+}
+
+.timeline-label {
+    align-self: center;
+    justify-self: center;
+    margin-top: 30px;
+    font-size: 0.85rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-weight: bold;
+    text-align: center;
+    filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.6));
+}
+
+.step {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#folow-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 27%;
+}
+
+#folow-box strong {
+    font-size: 2.7rem;
+    color: rgb(0, 119, 255);
+    position: relative;
+    z-index: 1;
+}
+
+#folow-box strong::before {
+    content: "";
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    width: 120%;
+    height: 180%;
+    background-color: white;
+    z-index: -1;
+    filter: blur(24px);
+}
+
+#folow-box span {
+    color: rgb(82, 177, 221);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    /* filter: drop-shadow(0 3px 3px rgba(0, 60, 255, 0.3)); */
+}

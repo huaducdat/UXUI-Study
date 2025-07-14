@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Table</title>
+    <link rel="stylesheet" href="../Job11/asset/css/style0.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="inputForm">
+        <p>Input User's infor</p>
+        <div>
+            <label for="uName">Name:</label>
+            <input type="text" id="uName">
+        </div>
+        <div>
+            <label for="uAge">Age:</label>
+            <input type="number" id="uAge">
+        </div>
+        <div id="genderGroup">
+            <label>Gender:</label>
+            <div>
+                <label for="tog1"><input type="radio" name="toggle" value="0" id="tog1">Male</label>
+                <label for="tog2"><input type="radio" name="toggle" value="1" id="tog2">Female</label>
+            </div>
+        </div>
+        <button id="submitButt" type="submit">Submit</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Number</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Function</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+               
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <script src="../Job11/asset/js/script.js"></script>
+</body>
+
+</html>
