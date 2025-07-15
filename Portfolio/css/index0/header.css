@@ -29,17 +29,11 @@
 
 }
 
-:root {
-    --high-light-color: rgb(255, 0, 179);
-    --grayTxt-color: #848484;
-    --out-grow-color-1: rgb(232, 255, 237);
-    --out-grow: rgba(255, 0, 179, 0.6);
-    --higher-light-color: rgb(255, 61, 197);
-}
 
 #avatar-box:hover {
     border-color: var(--higher-light-color);
-    box-shadow: 0 0 15px var(--high-light-color), 0 0 30px var(--out-grow);
+    box-shadow: 0 0 9px var(--high-light-color), 0 0 45px var(--out-grow);
+    /* box-shadow: 0 0 9px var(--high-light-color), 0 0 45px var(--out-grow); */
 }
 
 #avatar-box img {
@@ -129,6 +123,9 @@
 #user-info-box strong {
     font-size: x-large;
     align-self: center;
+    color: gold;
+    filter: drop-shadow(0 0 9px rgb(255, 251, 0))  drop-shadow(0 0 15px rgba(255, 251, 0, 0.3));
+   ;
 }
 
 #user-info-box b {
