@@ -72,34 +72,71 @@
 // newInfo.grades.english = 6;
 // console.log(newInfo);
 // console.log(info);
-const devices = [
-    { name: 'iphone', price: 1000 },
-    { name: 'laptop', price: 1500 },
-    { name: 'mouse', price: 50 }
+// const devices = [
+//     { name: 'iphone', price: 1000 },
+//     { name: 'laptop', price: 1500 },
+//     { name: 'mouse', price: 50 }
+// ];
+// console.log(devices);
+// devices.forEach(item => console.log('Device: ' + item.name));
+// devices.push({name: 'keyboard', price:100});
+// let newLst =  devices.filter(item => {if(item.price > 1000) return item});
+// console.log(newLst);
+
+// const student1s = [];
+// student1s.push({name:'A', score: 10});
+// student1s.push({name:'b', score: 9});
+// student1s.push({name:'c', score: 6});
+// student1s.push({name:'d', score: 7});
+// student1s.push({name:'e', score: 2});
+// student1s.push({name:'f', score: 5});
+// console.log(student1s);
+
+// let maxScore = 0;
+// student1s.forEach(stu => {
+//     if(maxScore < stu.score) maxScore = stu.score;
+// });
+
+// const studenMax = student1s.find(stu => stu.score === maxScore);
+// console.log(studenMax);
+// let passStus = student1s.filter(stu => stu.score >= 5)
+// console.log(passStus);
+// const missStu = student1s.find(stu => stu.score < 3);
+// console.log(missStu);
+const students = [
+    { id: 1, name: 'An', age: 16, gender: 'Nam', scores: [7, 8, 9] },
+    { id: 2, name: 'Bình', age: 17, gender: 'Nam', scores: [6, 6, 5] },
+    { id: 3, name: 'Cúc', age: 16, gender: 'Nữ', scores: [9, 9, 10] },
+    { id: 4, name: 'Dương', age: 18, gender: 'Nữ', scores: [4, 5, 6] },
+    { id: 5, name: 'E', age: 15, gender: 'Nam', scores: [10, 10, 10] }
 ];
-console.log(devices);
-devices.forEach(item => console.log('Device: ' + item.name));
-devices.push({name: 'keyboard', price:100});
-let newLst =  devices.filter(item => {if(item.price > 1000) return item});
-console.log(newLst);
+students.forEach(stu => {
+    console.log(`Name: ${stu.name}, Age: ${stu.age}`);
+})
 
-const student1s = [];
-student1s.push({name:'A', score: 10});
-student1s.push({name:'b', score: 9});
-student1s.push({name:'c', score: 6});
-student1s.push({name:'d', score: 7});
-student1s.push({name:'e', score: 2});
-student1s.push({name:'f', score: 5});
-console.log(student1s);
+const newArr = students.map(stu => {
+    const average = stu.scores.reduce((total, mark) => total + mark, 0) / stu.scores.length;
+    // const decimal = Math.floor((average % 1) * 10);
+    const trimed = Number(average.toFixed(1));
+    return { name: stu.name, averMark: trimed };
+})
+console.log("New list!");
+newArr.forEach(stu => console.log(`Name: ${stu.name}, Average mark: ${stu.averMark}`));
+const newStu = students.find(stu => stu.age >= 17);
+console.log(`${newStu.name} was larger than 17.`);
+const newLst = newArr.filter(stu => stu.averMark < 5);
+if (newLst.length < 1) {
+    console.log("There is no student has average mark lower than 5.");
 
-let maxScore = 0;
-student1s.forEach(stu => {
-    if(maxScore < stu.score) maxScore = stu.score;
-});
+}
+else {
+    newLst.forEach(stu => {
 
-const studenMax = student1s.find(stu => stu.score === maxScore);
-console.log(studenMax);
-let passStus = student1s.filter(stu => stu.score >= 5)
-console.log(passStus);
-const missStu = student1s.find(stu => stu.score < 3);
-console.log(missStu);
+        console.log(`${stu.name}'s average mark is lower or than 5.`)
+    });
+}
+
+const isEveryLarger = students.every(stu => stu.age >= 15);
+console.log(`All people are lager than 15 or equal to 15: ${isEveryLarger}`);
+const allAverage = newArr.reduce((sum, stu) => sum + stu.averMark, 0) / newArr.length;
+console.log("Average of the class is: " + allAverage);
