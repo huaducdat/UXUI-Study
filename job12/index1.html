@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Job-12</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+        #user-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            gap: 15px;
+        }
+        #my-table{
+            /* border: inset 2px solid grey; */
+            border-collapse: collapse;
+            width: 300px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        th{
+            background: grey;
+        }
+        th, td{
+            /* border: 1px solid grey; */
+            text-align: center;
+        }
+        td{
+            background-color: rgb(226, 226, 226);
+        }
+        tr{
+            border-bottom: 1px solid gray;
+        }
+        tr:hover{
+            background: green;
+        }
+        td:hover{
+            background-color: rgb(83, 216, 21);
+        }
+    </style>
+</head>
+
+<body>
+    <form id="user-form">
+        <label for="user-name">Name:<input type="text" id="user-name"></label>
+        <label for="user-age">Age:<input type="number" id="user-age"></label>
+        <div id="gender-box">
+            <label for="tog1">Male:<input type="radio" id="tog1" value="male" checked name="genderTog"></label>
+            <label for="tog2">Female:<input type="radio" id="tog2" value="female" name="genderTog"></label>
+        </div>
+        <button type="submit">Add</button>
+    </form>
+    <table id="my-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Function</th>
+            </tr>
+        </thead>
+        <tbody id="my-tbody">
+
+        </tbody>
+    </table>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../job12/js/index1.js"></script>
+
+</body>
+
+</html>
