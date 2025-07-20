@@ -54,25 +54,70 @@
         td:hover {
             background-color: rgb(83, 216, 21);
         }
-        #edit-board{
+
+        #edit-board {
             display: flex;
             flex-direction: column;
-            gap: 9px;
+            gap: 15px;
             justify-content: center;
             align-items: center;
             border: 3px solid grey;
             padding: 15px 18px;
             border-radius: 6px;
-            position: relative;
+            position: fixed;
+            z-index: 9;
+            background: white;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
         }
-        #edit-board::before{
+
+        #edit-board-overlay {
             position: fixed;
             content: "";
-            background-color: gray;
+            background-color: rgb(0, 0, 0, .6);
             width: 100%;
             height: 100%;
             top: 0;
             left: 0;
+            /* z-index: -1; */
+            backdrop-filter: blur(3px);
+            box-shadow: inset 0 0 60px black;
+        }
+
+        #edit-gender-box {
+            border: 2px solid gray;
+            padding: 12px;
+            border-radius: 3px;
+
+        }
+
+        #edit-gender-box p {
+            margin: 0;
+            font-weight: bold;
+            margin-bottom: 9px;
+        }
+
+        #cancel-btn,
+        #ok-butt {
+            padding: 3px 9px;
+            width: 5em;
+            height: 2em;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+
+        input {
+            border-radius: 3px;
+        }
+
+        .info-edit-box {
+            display: flex;
+            justify-content: space-between;
+            gap: 3px;
+            font-weight: bold;
+            width: 220px;
         }
     </style>
 </head>
@@ -100,23 +145,31 @@
 
         </tbody>
     </table>
-    <form id="edit-board">
-        <strong>Edit Board</strong>
-        <div> <label for="name-input"></label>
-            <input type="text" id="name-input">
-        </div>
-        <div>
-            <label for="age-input"></label>
-            <input type="number" id="age-input">
-        </div>
-        <div>
-            <p>Gender</p>
-            <div>
-                <label for="male-input"><input type="radio" id="male-input" name="edit-gender-tog" value="male">Male</label>
-                <label for="female-input"><input type="radio" id="female-input" name="edit-gender-tog" value="female">Female</label>
+    <div id="edit-box" style="display: none">
+        <div id="edit-board-overlay"></div>
+        <form id="edit-board">
+            <strong>Edit Board</strong>
+            <div class="info-edit-box"> <label for="name-input">Name</label>
+                <input type="text" id="name-input">
             </div>
-        </div>
-    </form>
+            <div class="info-edit-box">
+                <label for="age-input">Age</label>
+                <input type="number" id="age-input">
+            </div>
+            <div id="edit-gender-box">
+                <p>Gender</p>
+                <div>
+                    <label for="male-input"><input type="radio" id="male-input" name="edit-gender-tog" value="male"
+                            checked>Male</label>
+                    <label for="female-input"><input type="radio" id="female-input" name="edit-gender-tog"
+                            value="female">Female</label>
+                </div>
+            </div>
+            <button type="button" id="cancel-btn">Cancel</button>
+            <button type="submit" id="ok-butt">OK</button>
+        </form>
+    </div>
+
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
