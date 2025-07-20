@@ -1,6 +1,6 @@
 #skill-space {
     width: 70%;
-    height: 1200px;
+    /* height: 1200px; */
     display: flex;
 
     flex-direction: column;

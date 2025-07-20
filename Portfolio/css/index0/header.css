@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #d5e4ff93;
+    background-color: #95baff52;
     padding: 24px;
     position: sticky;
     position: fixed;
@@ -12,8 +12,8 @@
     left: 0;
     z-index: 99;
 
-    backdrop-filter: blur(18px);
-    box-shadow: 0 1.5px 9px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 1.5px 9px rgba(0, 0, 0, 0.3);
 }
 
 #avatar-box {
@@ -50,8 +50,14 @@
 
 #sign-block-box {
     display: flex;
-    gap: 27px;
+    gap: 12px;
+    justify-content: space-between;
+    /* position: relative; */
+    align-items: center;
+    
 }
+
+
 
 #sign-block-box a {
     font-size: 1.5rem;
@@ -63,6 +69,25 @@
     color: var(--high-light-color);
     filter: drop-shadow(0 0 3px var(--out-grow));
 }
+
+#divider {
+    width: 2px;
+    background-color: #4D6FF4;
+    height: 100%;
+    margin: 0;
+    height: 1.2em;
+}
+
+/* #sign-block-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #4D6FF4;
+    left: 50%;
+    transform: translateX(-50%) !important;
+} */
 
 #page-name {
     font-weight: bold;
@@ -124,8 +149,8 @@
     font-size: x-large;
     align-self: center;
     color: gold;
-    filter: drop-shadow(0 0 9px rgb(255, 251, 0))  drop-shadow(0 0 15px rgba(255, 251, 0, 0.3));
-   ;
+    filter: drop-shadow(0 0 9px rgb(255, 251, 0)) drop-shadow(0 0 15px rgba(255, 251, 0, 0.3));
+    ;
 }
 
 #user-info-box b {

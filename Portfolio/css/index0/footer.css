@@ -14,8 +14,8 @@ footer {
 }
 
 #contact-box {
-    width: 490px;
-    height: 800px;
+
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -40,10 +40,12 @@ footer {
     align-items: start;
     align-self: flex-start;
     margin-top: 30px;
+    gap: 24px;
+    object-fit: contain;
 }
 
 #send-message-box input {
-    background-color: grey;
+    background-color: rgb(54, 54, 54);
     border: none;
     border-radius: 6px;
     outline: none;
@@ -51,12 +53,15 @@ footer {
     font-size: 1.5rem;
     width: 100%;
     padding: 3px 6px;
+    padding-left: 12px;
     cursor: pointer;
-
+    caret-color: rgb(255, 255, 255);
+    color: white;
 }
 
 #send-message-box input::placeholder {
     color: rgb(85, 85, 85);
+    font-weight: 300;
 }
 
 #send-message-box label {
@@ -76,4 +81,96 @@ footer {
     align-items: center;
     justify-content: space-between;
     gap: 60px;
+}
+
+#toggle-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 12px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#toggle-box div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: start;
+    align-items: start;
+    gap: 24px 120px;
+
+}
+
+#toggle-box label {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+#toggle-box input[type="checkbox"] {
+    width: 1em;
+    height: 1em;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    appearance: none;
+    accent-color: white;
+    border: 2px solid white;
+    
+}
+
+#toggle-box input[type="checkbox"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: .6em;
+  height: .6em;
+  background-color: white;
+  border-radius: 50%;
+}
+#message-input{
+    font-size: 1rem !important;
+    font-weight: 300 !important;
+    height: 230px;
+    width: 100%;
+    resize: none;
+    caret-color: white;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+footer button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    height: 36px;
+    width: 120px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 6px;
+    /* border: none; */
+    border: 2px solid white;
+    /* opacity: border 0; */
+    cursor: pointer;
+}
+footer button:hover{
+    background-color: black;
+    color: white;
 }

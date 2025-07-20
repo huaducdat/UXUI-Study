@@ -1,3 +1,4 @@
+
 $(document).ready(() => {
     console.log("i am ready now!");
     $('#user-form').on('submit', e => {
@@ -8,21 +9,39 @@ $(document).ready(() => {
 
         if (name != '' && (age <= 30 && age > 9)) {
 
-            const newRow =
-                `<tr>
+            const newRow = $(`<tr>
                     <td>${name}</td>
                     <td>${age}</td>
                     <td>${gender}</td>
-                    <td><button class="remove-btn">Remove</button></td>
+                    <td><button class="remove-btn">Remove</button><button class="edit-btn">Edit</button></td>
                 </tr>
-                `;
-            $('#my-tbody').append(newRow);
+                `);
 
+            newRow.find('td:last').css({
+                display: 'flex',
+                gap: '9px',
+                'justify-content': 'center'
+            });
+
+            $('#my-tbody').append(newRow);
             $('#user-form')[0].reset();
+
         }
-        $('#my-tbody').on('click', '.remove-btn', function () {
-            $(this).closest('tr').remove();
-        });
 
     })
+    $('#my-tbody').on('click', '.remove-btn', function () {
+        $(this).closest('tr').remove();
+    });
+    $('#my-tbody').on('click', '.edit-btn', function () {
+        const row = $(this).closest('tr');
+        const name = row.find('td:eq(0)').text();
+        const age = row.find('td:eq(1)').text();
+        const gender = row.find('td:eq(2)').text();
+        console.log(name);
+        currentRow = row;
+    })
+
 });
+
+let currentRow;
+

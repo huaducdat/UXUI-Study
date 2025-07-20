@@ -30,6 +30,9 @@
     <link rel="stylesheet" href="../Portfolio/css/index0/showcase3.css">
     <link rel="stylesheet" href="../Portfolio/css/index0/showCase4.css">
     <link rel="stylesheet" href="../Portfolio/css/index0/footer.css">
+    <link rel="stylesheet" href="../Portfolio/css/index0/end-page.css">
+    <link rel="stylesheet" href="../Portfolio/css/index0/go-to-top.css">
+    <link rel="stylesheet" href="../Portfolio/css/index0/media-queries.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -56,6 +59,7 @@
         </div>
         <div id="sign-block-box">
             <a>Sign in</a>
+            <div id="divider"></div>
             <a>Block</a>
         </div>
     </header>
@@ -63,7 +67,7 @@
         <div id="show-case-1">
             <div class="colum-div">
                 <strong>Welcome to my profile!</strong>
-                <p>Hi, my name is Duc Dat Hua. I's free spirit and i work with passion for art, architecture, game dev
+                <p>Hi, my name is Duc Dat Hua. I'm a free spirit and i work with passion for art, architecture, game dev
                     and e-commercial.</p>
                 <div id="send-box">
                     <label for="sendMeBox">Feel free to contact me.</label>
@@ -118,7 +122,7 @@
             <div id="slider-catalog">
                 <div class="slide-img-box"><img src="../Portfolio/resource/img/SlideImg1.png" alt="image"></div>
                 <div class="slide-img-box"><img src="../Portfolio/resource/img/SlideImg2.png" alt="image"></div>
-                <div class="slide-img-box"><img src="../Portfolio/resource/img/SliderImg4.png" alt="img" style=""></div>
+                <div class="slide-img-box"><img src="../Portfolio/resource/img/SliderImg4.png" alt="img"></div>
                 <div class="slide-img-box"><img src="../Portfolio/resource/img/SlideImg3.png" alt="img"></div>
                 <div class="slide-img-box"><img src="../Portfolio/resource/img/SliderImg5.png" alt="img"></div>
                 <div class="slide-img-box"><img src="../Portfolio/resource/img/SliderImg6.png" alt="img"></div>
@@ -190,7 +194,7 @@
                 </div>
             </div>
             <div class="showbox2" id="setSize2">
-                <div class="wrapper-column">             
+                <div class="wrapper-column">
                     <img src="../Portfolio/resource/img/character1.jpg" alt="photo">
                     <img src="../Portfolio/resource/img/character5.jpg" alt="photo">
                     <img src="../Portfolio/resource/img/character6.jpg" alt="photo">
@@ -204,7 +208,9 @@
             </div>
         </div>
         <div id="show-case-3">
-            <div id="name-space-case3"><p>UI/UX Design</p></div>
+            <div id="name-space-case3">
+                <p>UI/UX Design</p>
+            </div>
             <div class="case3-img-box">
                 <img src="../Portfolio/resource/img/interface-page1.jpg" alt="photo">
                 <p>Elegant UI/UX but maintain emotional. Relax but deep in space of feeling.</p>
@@ -226,12 +232,14 @@
                 <div id="photo-box-3"></div>
                 <div id="case4-txt-box">
                     <p>MODERN BAUHAUS ARCHITECTURE</p>
-                    <span>This style focuses on human friendliness and artistic emotion through shapes and colors. A Bauhaus architecture with strong expressionism </span>
+                    <span>This style focuses on human friendliness and artistic emotion through shapes and colors. A
+                        Bauhaus architecture with strong expressionism.</span>
                 </div>
             </div>
         </div>
     </main>
     <footer>
+
         <div id="contact-box">
             <p>Contact Information</p>
             <span>Fill the form and we are going to contact you later</span>
@@ -240,14 +248,41 @@
         </div>
         <form id="send-message-box">
             <div id="guest-name-box">
-                <label for="guest-first-name-input">First name<input type="text" placeholder="Input here..."></label>
-                <label for="guest-last-name-input">Last name<input type="text" placeholder="Input here..."></label>
+                <label for="guest-first-name-input">First name<input type="text" placeholder="Input here..."
+                        id="guest-first-name-input"></label>
+                <label for="guest-last-name-input">Last name<input type="text" placeholder="Input here..."
+                        id="guest-last-name-input"></label>
             </div>
+            <label for="email-input">Email<input type="email" id="email-input" placeholder="Input here..."></label>
+            <div id="toggle-box">
+                <p>What are you interest in?</p>
+                <div>
+                    <label for="website-toggle"><input type="checkbox" id="website-toggle"
+                            value="website">Website</label>
+                    <label for="game-toggle"><input type="checkbox" id="game-toggle" value="game">Game</label>
+                    <label for="app-toggle"><input type="checkbox" id="app-toggle" value="app">App</label>
+                    <label for="art-toggle"><input type="checkbox" id="art-toggle" value="art">Art</label>
+                    <label for="architecture-toggle"><input type="checkbox" id="architecture-toggle"
+                            value="architecture">Architecture</label>
+                </div>
+            </div>
+            <label for="text-input">Your message<textarea id="message-input"
+                    placeholder="Type your message..."></textarea></label>
+            <button type="submit">Submit</button>
         </form>
     </footer>
-
-
-
+    <div id="end-information-box">
+        <p>@2025 Made by Duc Dat Hua</p>
+        <div>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Blog</a>
+            <a href="">Service</a>
+            <button>Subscribe</button>
+        </div>
+    </div>
+    <button id="goto-header" title="Go to Top"><img src="../Portfolio/resource/img/caret-up-fill.svg" alt="icon"></button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="../Portfolio/js/part1.js"></script>
 </body>
 
